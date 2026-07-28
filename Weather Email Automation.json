@@ -1,0 +1,111 @@
+{
+  "name": "Weather Email Automation",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 2,
+              "triggerAtMinute": 30
+            },
+            {}
+          ]
+        }
+      },
+      "id": "ec94d3b5-8dc8-44ea-9699-5202237a9631",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "cityName": "Kakinada, Andhra Pradesh, IN"
+      },
+      "id": "dcca147d-e16b-44f0-99c2-64e8daff66b7",
+      "name": "OpenWeatherMap",
+      "type": "n8n-nodes-base.openWeatherMap",
+      "typeVersion": 1,
+      "position": [
+        224,
+        0
+      ],
+      "credentials": {
+        "openWeatherMapApi": {
+          "id": "DA3nX3TDbHH2OIQf",
+          "name": "OpenWeatherMap account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sendTo": "email@gmail.com",
+        "subject": "WEATHER UPDATE",
+        "emailType": "text",
+        "message": "=Hello,\n\nHere's your scheduled weather update.\n\n📍 Location: {{ $json.name }}, {{ $json.sys.country }}\n🌤 Weather: {{ $json.weather[0].main }} ({{ $json.weather[0].description }})\n🌡 Temperature: {{ $json.main.temp }}°C\n🤒 Feels Like: {{ $json.main.feels_like }}°C\n💧 Humidity: {{ $json.main.humidity }}%\n💨 Wind Speed: {{ $json.wind.speed }} m/s\n\nHave a great day! ☀️",
+        "options": {
+          "appendAttribution": false
+        }
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        432,
+        0
+      ],
+      "id": "820ae0ac-5420-4bbb-93c3-b430afa583c6",
+      "name": "Send a message",
+      "webhookId": "41149057-bf07-42be-b57f-d82f28c1adf3",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "sAyoHHSGWDqC7FXC",
+          "name": "Gmail account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "OpenWeatherMap",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenWeatherMap": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "cf3ce23b-ea51-4a71-9bab-39902e23e438",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ccee4b7508d4851be06daaa4f6ae437782197dc035050f5862c34a8eba8a37cc"
+  },
+  "nodeGroups": [],
+  "id": "szXQCW4VkAPj2JsE",
+  "tags": []
+}
