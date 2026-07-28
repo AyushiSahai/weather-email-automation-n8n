@@ -13,17 +13,21 @@ Instead of manually checking the weather every day, this workflow automates the 
 ---
 
 ## 🔄 Workflow
-
-```text
-Schedule Trigger
-        │
-        ▼
-OpenWeatherMap API
-        │
-        ▼
-Gmail
 ```
-
+┌────────────────────┐
+│ Schedule Trigger   │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ OpenWeatherMap API │
+└─────────┬──────────┘
+          │
+          ▼
+┌────────────────────┐
+│ Gmail              │
+└────────────────────┘
+```
 ---
 
 ## 🛠️ Tech Stack
