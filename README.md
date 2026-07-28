@@ -12,7 +12,7 @@ Instead of manually checking the weather every day, this workflow automates the 
 
 ---
 
-## 🔄 Workflow
+## 🔄 Workflow Overview
 ```
 ┌────────────────────┐
 │ Schedule Trigger   │
@@ -66,9 +66,10 @@ Instead of manually checking the weather every day, this workflow automates the 
 6. Publish the workflow.
 ---
 
-## 📸 Workflow
+## 📸 Workflow Preview
 
-<img width="1006" height="348" alt="image" src="https://github.com/user-attachments/assets/01dbd327-9d0d-43f0-ada6-0eb63249d4ba" />
+<img width="863" height="195" alt="image" src="https://github.com/user-attachments/assets/b2944ac5-96d7-49f4-a8ac-450b2bdb8813" />
+
 
 
 ---
