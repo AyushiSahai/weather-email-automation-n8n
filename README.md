@@ -68,7 +68,8 @@ Instead of manually checking the weather every day, this workflow automates the 
 
 ## 📸 Workflow
 
-*(Add your screenshot here.)*
+<img width="1006" height="348" alt="image" src="https://github.com/user-attachments/assets/01dbd327-9d0d-43f0-ada6-0eb63249d4ba" />
+
 
 ---
 
@@ -77,6 +78,10 @@ Instead of manually checking the weather every day, this workflow automates the 
 - Send alerts only when rain is expected.
 - Include weather forecasts instead of current conditions.
 - Support notifications through Telegram or Slack.
+- Support multiple cities
+- Send alerts only during severe weather
+- Deliver notifications to Telegram or Slack
+- Customize the email frequency
 - Add AI-generated weather summaries.
 
 ---
