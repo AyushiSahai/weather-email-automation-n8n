@@ -76,13 +76,16 @@ Instead of manually checking the weather every day, this workflow automates the 
 
 ## 💡 Future Improvements
 
-- Send alerts only when rain is expected.
-- Include weather forecasts instead of current conditions.
-- Support notifications through Telegram or Slack.
-- Support multiple cities
-- Send alerts only during severe weather
-- Deliver notifications to Telegram or Slack
-- Customize the email frequency
-- Add AI-generated weather summaries.
+### Functional Enhancements
+- Support multiple cities.
+- Include weather forecasts instead of current weather.
+- Send alerts only during severe weather conditions.
+
+### Notification Channels
+- Add Telegram notifications.
+- Add Slack notifications.
+
+### User Experience
+- Allow users to customize the notification schedule.
 
 ---
