@@ -2,7 +2,7 @@
 
 A lightweight workflow built with **n8n** that automatically retrieves current weather information from the **OpenWeatherMap API** and delivers it to Gmail on a scheduled interval.
 
-> This project was created to learn workflow automation, API integration, and event-driven scheduling using n8n.
+> Built as a hands-on learning project to explore workflow automation, API integration, and scheduled task execution using n8n.
 
 ---
 
