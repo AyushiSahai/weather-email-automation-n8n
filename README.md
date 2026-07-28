@@ -5,6 +5,9 @@ A lightweight workflow built with **n8n** that automatically retrieves current w
 > Built as a hands-on learning project to explore workflow automation, API integration, and scheduled task execution using n8n.
 
 ---
+![n8n](https://img.shields.io/badge/n8n-Workflow_Automation-EA4B71?logo=n8n&logoColor=white)
+![OpenWeatherMap](https://img.shields.io/badge/OpenWeatherMap-API-EB6E4B)
+![Gmail](https://img.shields.io/badge/Gmail-Email-D14836?logo=gmail&logoColor=white)
 
 ## 🚀 Overview
 
