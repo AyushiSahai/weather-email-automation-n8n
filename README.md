@@ -52,7 +52,14 @@ Gmail
  ├── workflow.png
  └── README.md
 ```
+## 🚀 Getting Started
 
+1. Clone this repository.
+2. Import `weather-email-automation.json` into n8n.
+3. Configure your OpenWeatherMap credentials.
+4. Configure your Gmail credentials.
+5. Replace the recipient email address.
+6. Publish the workflow.
 ---
 
 ## 📸 Workflow
